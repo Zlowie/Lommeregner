@@ -20,6 +20,7 @@ class Main {
         frame.setSize(340, 443);
         frame.setResizable(false);
 
+
         Result = new JTextField(20);
         Result.setBounds(2,2,315,146);
         Result.setBackground(new Color(32,32,32));
@@ -27,6 +28,7 @@ class Main {
         Result.setHorizontalAlignment(SwingConstants.RIGHT);
         Result.setFont(fontResult);
         Result.setBorder(BorderFactory.createEmptyBorder());
+        Result.setEditable(false);
 
         //Række 0
         BTrigonometri = new JButton("Trigonometri ↓");
@@ -471,7 +473,7 @@ class Main {
             }
         });
 
-
+    
         frame.add(B1);
         frame.add(B2);
         frame.add(B3);
