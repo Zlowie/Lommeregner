@@ -348,39 +348,39 @@ class Main {
 
 
 
-        BTrigonometri.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(trigonometri){
-                    Hide();
+            BTrigonometri.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if(trigonometri){
+                        Hide();
 
-                } else if (andet) {
-                    Hide();
+                    } else if (andet) {
+                        Hide();
 
-                    BTan.setVisible(true);
-                    BCos.setVisible(true);
-                    BSin.setVisible(true);
+                        BTan.setVisible(true);
+                        BCos.setVisible(true);
+                        BSin.setVisible(true);
 
-                    B1.setVisible(false);
-                    B2.setVisible(false);
-                    B3.setVisible(false);
+                        B1.setVisible(false);
+                        B2.setVisible(false);
+                        B3.setVisible(false);
 
-                    trigonometri = true;
-                } else if(!trigonometri){
-                    BTan.setVisible(true);
-                    BCos.setVisible(true);
-                    BSin.setVisible(true);
+                        trigonometri = true;
+                    } else if(!trigonometri){
+                        BTan.setVisible(true);
+                        BCos.setVisible(true);
+                        BSin.setVisible(true);
 
-                    B1.setVisible(false);
-                    B2.setVisible(false);
-                    B3.setVisible(false);
+                        B1.setVisible(false);
+                        B2.setVisible(false);
+                        B3.setVisible(false);
 
-                    trigonometri = true;
+                        trigonometri = true;
+                    }
+
+
                 }
-
-
-            }
-        });
+            });
 
         BTan.addActionListener(new ActionListener() {
             @Override
@@ -473,7 +473,8 @@ class Main {
             }
         });
 
-    
+
+        //adding the buttons to the frame
         frame.add(B1);
         frame.add(B2);
         frame.add(B3);
